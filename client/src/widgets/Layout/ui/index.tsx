@@ -16,11 +16,11 @@ export const Layout: FC<LayoutProps> = ({
   return (
     <>
       {showHeader && (
-        <header>
+        <header className="flex-center px-5 py-2 border-b">
           <Header />
         </header>
       )}
-      <main>{children}</main>
+      <main className="h-screen">{children}</main>
       {showFooter && (
         <footer>
           <Footer />

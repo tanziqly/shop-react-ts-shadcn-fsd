@@ -1,8 +1,13 @@
 import { Router } from "@/pages";
 import { FC, ReactElement } from "react";
+import { ThemeProvider } from "./providers/theme-provider";
 
 const App: FC = (): ReactElement => {
-  return <Router />;
+  return (
+    <ThemeProvider>
+      <Router />
+    </ThemeProvider>
+  );
 };
 
 export default App;
