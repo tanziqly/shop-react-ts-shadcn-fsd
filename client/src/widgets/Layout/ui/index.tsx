@@ -22,7 +22,7 @@ export const Layout: FC<LayoutProps> = ({
       )}
       <main className="h-screen">{children}</main>
       {showFooter && (
-        <footer>
+        <footer className="flex-center px-5 py-2 border-t">
           <Footer />
         </footer>
       )}
