@@ -9,7 +9,7 @@ import { MobileMenu } from "./MobileMenu";
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const isAuth: Boolean = false;
+  const isAuth: Boolean = true;
 
   return (
     <>
