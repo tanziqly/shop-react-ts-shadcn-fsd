@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { Menu, ShoppingBag } from "lucide-react";
 
-import { SearchInput } from "./SearchInput";
 import { AuthButtons } from "./AuthButtons";
 import { UserProfile } from "./UserProfile";
 import { MobileMenu } from "./MobileMenu";
@@ -20,7 +19,6 @@ export const Header = () => {
           Tanziqly.shop
         </Link>
         <div className="hidden sm:flex gap-2">
-          <SearchInput />
           <div className="flex items-center gap-1">
             {isAuth ? <UserProfile /> : <AuthButtons />}
           </div>

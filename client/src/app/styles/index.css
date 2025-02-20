@@ -70,3 +70,20 @@
     @apply max-w-[1240px] w-full flex;
   }
 }
+
+/* different classes */
+
+@layer utilities {
+  .custom-gradient-text {
+    background-image: linear-gradient(
+      209deg,
+      #ea6044 39%,
+      #dc5083 50%,
+      #9a6df7 67%,
+      #3f8def 81%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

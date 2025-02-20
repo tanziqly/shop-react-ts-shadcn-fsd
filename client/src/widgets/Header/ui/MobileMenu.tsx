@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { SearchInput } from "./SearchInput";
 import { AuthButtons } from "./AuthButtons";
 import { UserProfile } from "./UserProfile";
 
@@ -23,8 +22,6 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         <X />
       </button>
       <div className="mt-8 flex flex-col gap-2">
-        <SearchInput />
-
         {isAuth ? <UserProfile /> : <AuthButtons />}
       </div>
     </motion.div>

@@ -20,7 +20,9 @@ export const Layout: FC<LayoutProps> = ({
           <Header />
         </header>
       )}
-      <main className="h-screen">{children}</main>
+      <main className="h-screen border-b items-start flex-center">
+        {children}
+      </main>
       {showFooter && (
         <footer className="flex-center px-5 py-2 border-t">
           <Footer />
