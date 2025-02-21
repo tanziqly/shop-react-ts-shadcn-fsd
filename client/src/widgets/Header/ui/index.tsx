@@ -13,7 +13,7 @@ export const Header = () => {
 
   return (
     <>
-      <nav className="container flex justify-between items-center">
+      <nav className="width flex justify-between items-center">
         <Link to="/" className="text-lg font-bold flex gap-1 items-center">
           <ShoppingBag size={24} />
           Tanziqly.shop

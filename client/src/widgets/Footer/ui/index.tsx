@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="container flex justify-between items-center">
+    <div className="width flex justify-between items-center">
       Tanziqly.shop
       <a
         className="underline"

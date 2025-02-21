@@ -2,7 +2,7 @@ import { SearchInput } from "./SearchInput";
 
 const Banner = () => {
   return (
-    <div className="width border-b mb-8 flex-col px-5 items-center py-24 gap-2">
+    <div className="border-b mb-8 flex-col px-5 flex items-center py-24 gap-2">
       <h1 className="text-2xl sm:text-4xl font-black uppercase custom-gradient-text">
         Tanziqly.shop
       </h1>
