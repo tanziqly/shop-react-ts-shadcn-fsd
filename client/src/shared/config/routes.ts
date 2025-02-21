@@ -4,4 +4,5 @@ export const ROUTE_CONSTANTS = {
   SIGNUP: "/sign-up",
   CART: "/cart",
   PRODUCT: "/product/:productId",
+  PROFILE: "/profile",
 };

@@ -10,6 +10,7 @@ import { SignUp } from "./SignUp";
 import { SignIn } from "./SignIn";
 import { NotFound } from "./NotFound";
 import { Layout } from "@widgets/Layout";
+import { Profile } from "./Profile";
 
 export const Router: FC = () => {
   return (
@@ -21,6 +22,7 @@ export const Router: FC = () => {
           <Route path={ROUTE_CONSTANTS.SIGNUP} element={<SignUp />} />
           <Route path={ROUTE_CONSTANTS.PRODUCT} element={<Product />} />
           <Route path={ROUTE_CONSTANTS.CART} element={<Cart />} />
+          <Route path={ROUTE_CONSTANTS.PROFILE} element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

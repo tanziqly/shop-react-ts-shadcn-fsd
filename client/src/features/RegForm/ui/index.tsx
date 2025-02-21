@@ -80,7 +80,7 @@ export function RegForm({
               </div>
               <div className="text-center text-sm">
                 Already have an account?{" "}
-                <a href="#" className="underline underline-offset-4">
+                <a href="/sign-in" className="underline underline-offset-4">
                   Sign in
                 </a>
               </div>
