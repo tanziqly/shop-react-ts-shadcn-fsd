@@ -4,8 +4,21 @@ import { Label } from "@shared/ui/label";
 import { Input } from "@shared/ui/input";
 
 import { FC } from "react";
+import { useProfile } from "../lib/useProfile";
 
 export const Profile: FC = () => {
+  const {
+    name,
+    setName,
+    lastname,
+    setLastname,
+    email,
+    setEmail,
+    password,
+    setPassword,
+    handleSave,
+  } = useProfile();
+
   return (
     <section className="flex-center px-5 h-screen">
       <div className="width items-center h-full flex flex-col mt-16">
@@ -35,6 +48,8 @@ export const Profile: FC = () => {
                 className="text-sm"
                 placeholder="Type your name"
                 type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -44,6 +59,8 @@ export const Profile: FC = () => {
                 className="text-sm"
                 placeholder="Type your lastname"
                 type="text"
+                value={lastname}
+                onChange={(e) => setLastname(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -53,6 +70,8 @@ export const Profile: FC = () => {
                 className="text-sm placeholder:text-sm"
                 placeholder="Type your email"
                 type="text"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -62,9 +81,11 @@ export const Profile: FC = () => {
                 className="text-sm"
                 placeholder="Type your password"
                 type="text"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <Button>Save changes</Button>
+            <Button onClick={handleSave}>Save changes</Button>
           </div>
         </div>
       </div>
