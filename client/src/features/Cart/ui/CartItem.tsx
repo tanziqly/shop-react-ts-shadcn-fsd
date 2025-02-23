@@ -28,11 +28,13 @@ const CartItem = () => {
       <div className="w-full col-span-6 flex justify-center">
         <div className="flex sm:hidden flex-col">
           <div className="flex gap-2 text-neutral-500">
-            <span className="block text-black font-normal">Price: </span>
+            <span className="block text-black dark:text-white font-normal">
+              Price:{" "}
+            </span>
             $20.50
           </div>
           <div className="flex items-center">
-            <span className="block mr-2 text-black font-normal">
+            <span className="block mr-2 text-black dark:text-white font-normal">
               Quantity:{" "}
             </span>
             <button className="border rounded px-2 py-1">-</button>
@@ -40,7 +42,9 @@ const CartItem = () => {
             <button className="border rounded px-2 py-1">+</button>
           </div>
           <div className="flex gap-2 font-semibold">
-            <span className="text-black font-normal">Total Price: </span>
+            <span className="text-black dark:text-white font-normal">
+              Total Price:{" "}
+            </span>
             $41.00
           </div>
         </div>

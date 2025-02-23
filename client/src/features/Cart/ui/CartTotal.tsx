@@ -2,7 +2,7 @@ import { Button } from "@shared/ui/button";
 
 const CartTotal = () => {
   return (
-    <article className="lg:max-w-[350px] flex flex-col gap-4 h-fit w-full shadow-md bg-white rounded-lg p-5">
+    <article className="lg:max-w-[350px] flex flex-col gap-4 h-fit w-full shadow-md bg-white dark:bg-black rounded-lg p-5">
       <h3 className="text-xl font-bold">Cart Total</h3>
       <div className="flex flex-col gap-1">
         <div className="flex justify-between">
