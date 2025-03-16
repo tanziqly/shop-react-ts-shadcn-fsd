@@ -4,7 +4,7 @@ import image from "./product.jpeg";
 const Product = () => {
   return (
     <div className="flex transition duration-300 ease-in-out hover:scale-105 flex-col hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-sm max-w-[240px] w-full">
-      <Link to="/product" className="block">
+      <Link to="/product/1" className="block">
         <div className="flex flex-col">
           <img src={image} className="w-full h-56 rounded-t-sm" alt="Product" />
           <div className="flex flex-col gap-1 p-2">
