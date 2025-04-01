@@ -3,7 +3,7 @@ import CartTotal from "./CartTotal";
 
 export const Cart = () => {
   return (
-    <section className="flex px-5 flex-col pb-8 bg-muted items-center w-full">
+    <section className="flex px-5 flex-col pb-8 items-center w-full">
       <div className="flex flex-col items-center lg:items-start gap-1 my-8 w-full width">
         <h2 className="text-2xl font-bold">Shopping bag</h2>
         <div>

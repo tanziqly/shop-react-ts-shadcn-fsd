@@ -1,9 +1,21 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import ProductImage from "./product.jpeg";
 import { Link } from "react-router-dom";
 import { Button } from "@shared/ui/button";
 
 export const Product: FC = () => {
+  
+  const [click, setClick] = useState(1);
+
+  const addQuantity = () => {
+    setClick(click + 1);
+  }
+  const removeQuantity = () => {
+    if(click > 1) {
+      setClick(click - 1);
+    }
+  }
+
   return (
     <section className="h-screen w-full flex justify-center">
       <div className="flex gap-16 w-full h-fit max-w-[1240px] mt-12 px-5">
@@ -27,9 +39,9 @@ export const Product: FC = () => {
             <hr className="border my-2" />
             <div className="flex gap-4">
               <div className="flex gap-2 items-center">
-                <Button variant="outline">+</Button>
-                <span className="text-xl">1</span>
-                <Button variant="outline">-</Button>
+                <Button variant="outline" onClick={removeQuantity} size="icon">-</Button>
+                <span className="text-xl">{click}</span>
+                <Button variant="outline" onClick={addQuantity} size="icon">+</Button>
               </div>
               <Button className="w-full">Click to Buy</Button>
             </div>
